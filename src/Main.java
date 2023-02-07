@@ -5,7 +5,7 @@ public class Main {
         int replenishment = 1400;
 
         int x;
-        if (replenishment > 1000) {
+        if (replenishment >= 1000) {
             x = replenishment / 100;
         } else {
             x = 0;
