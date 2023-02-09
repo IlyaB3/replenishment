@@ -2,19 +2,19 @@ public class Main {
     public static void main(String[] args) {
 
         int balance = 100;
-        int replenishment = 1400;
+        int replenishment = 1100;
 
-        int x;
-        if (replenishment >= 1000) {
-            x = replenishment / 100;
+        int bonus;
+        if (replenishment > 1000) {
+            bonus = replenishment / 100;
         } else {
-            x = 0;
+            bonus = 0;
         }
 
-        int bonus = x;
-        int total = replenishment + x + balance;
+        int gift = bonus;
+        int total = replenishment + gift + balance;
 
-        System.out.println("Сумма бонусов: " + bonus + " рублей");
+        System.out.println("Сумма бонусов: " + gift + " рублей");
         System.out.println("Итого на счету: " + total + " рублей");
     }
 }
